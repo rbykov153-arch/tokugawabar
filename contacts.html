@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokugawa Bar - Контакты</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+    <div class="shapka">
+        <div class="logo">
+            <img class="logo_img" src="Tokugawa_logo.png" alt="Tokugawa Bar">
+        </div>
+        <div class="nav-links">
+            <div class="knopki">
+                <a class="perehod" href="index.html">Главная</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="menu.html">Меню</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="dos.html">Доставка</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="reg.html">Регистрация</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero">
+        <h1 class="logo_text">TOKU<span>GAWA</span> BAR</h1>
+        <p class="info_logo2">свяжитесь с нами</p>
+    </div>
+
+
+    <section class="contacts-section">
+        <div class="container">
+            <h2 class="section-title">Наши контакты</h2>
+            
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>г. Краснодар, ул. Красная, 100</p>
+                            <p>Вход со стороны ул. Гоголя</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефоны</h3>
+                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a> - заказ столиков</p>
+                            <p><a href="tel:+79991234568">+7 (999) 123-45-68</a> - доставка</p>
+                            <p><a href="tel:+79991234569">+7 (999) 123-45-69</a> - администрация</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@tokugawa-bar.ru">info@tokugawa-bar.ru</a> - общие вопросы</p>
+                            <p><a href="mailto:reserve@tokugawa-bar.ru">reserve@tokugawa-bar.ru</a> - бронирование</p>
+                            <p><a href="mailto:delivery@tokugawa-bar.ru">delivery@tokugawa-bar.ru</a> - доставка</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Социальные сети</h3>
+                            <p>Подписывайтесь на нас в социальных сетях</p>
+                            <div class="social-contacts">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-vk"></i></a>
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="color: var(--accent-color); margin-bottom: 25px; text-align: center;">Напишите нам</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Ваше имя</label>
+                            <input type="text" class="form-input" id="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-input" id="email" placeholder="example@mail.ru" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Телефон</label>
+                            <input type="tel" class="form-input" id="phone" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Тема сообщения</label>
+                            <select class="form-input" id="subject" required>
+                                <option value="">Выберите тему</option>
+                                <option value="reservation">Бронирование столика</option>
+                                <option value="delivery">Доставка</option>
+                                <option value="complaint">Жалоба</option>
+                                <option value="suggestion">Предложение</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Сообщение</label>
+                            <textarea class="form-textarea" id="message" placeholder="Опишите ваш вопрос или пожелание..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="map-hours-section">
+        <div class="container">
+            <div class="map-hours-content">
+                <div class="map-container">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a63e4d61f6b7c89d4c8e8e8e8e8e8e8&amp;source=constructor"
+                    width="100%" 
+                    height="400" 
+                    frameborder="0">
+                </iframe>
+                </div>
+                
+                <div class="hours-card">
+                    <h3 class="hours-title">Время работы</h3>
+                    
+                    <div class="hours-item">
+                        <span class="day">Понедельник - Четверг</span>
+                        <span class="time">11:00 - 23:00</span>
+                    </div>
+                    
+                    <div class="hours-item">
+                        <span class="day">Пятница</span>
+                        <span class="time">11:00 - 00:00</span>
+                    </div>
+                    
+                    <div class="hours-item">
+                        <span class="day">Суббота</span>
+                        <span class="time">12:00 - 00:00</span>
+                    </div>
+                    
+                    <div class="hours-item">
+                        <span class="day">Воскресенье</span>
+                        <span class="time">12:00 - 23:00</span>
+                    </div>
+                    
+                    <div class="hours-item">
+                        <span class="day today">Кухня работает до</span>
+                        <span class="time">22:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли забронировать столик онлайн?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете забронировать столик через форму на этой странице, по телефону +7 (999) 123-45-67 или через наши социальные сети. Рекомендуем бронировать столик заранее, особенно на вечер пятницы и выходные дни.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Есть ли у вас парковка?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, для гостей ресторана доступна бесплатная парковка на 20 машиномест. Парковка находится во внутреннем дворе здания. При заезде сообщите охране, что вы направляетесь в Tokugawa Bar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли провести мероприятие в вашем ресторане?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы организуем мероприятия любого масштаба: от бизнес-ланчей до свадеб и корпоративов. У нас есть отдельный банкетный зал на 50 человек. Для обсуждения деталей свяжитесь с нашим управляющим по телефону +7 (999) 123-45-69.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Работаете ли вы в праздничные дни?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы работаем в большинство праздничных дней. Выходные дни только 1 января. В праздники мы работаем по специальному графику, который публикуем заранее в наших социальных сетях. Рекомендуем бронировать столик заранее.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tokugawa Bar</h3>
+                    <div class="social-links">
+                        <a href="https://vk.com/reilevak"><i>VK</i></a>
+                        <a href="https://t.me/reiebetvammozgi"><i>TG</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Меню</h3>
+                    <ul class="footer-links">
+                        <li><a href="menu.html #menu1">Суши и роллы</a></li>
+                        <li><a href="menu.html #menu2">Сашими</a></li>
+                        <li><a href="menu.html #menu3">Темпура</a></li>
+                        <li><a href="menu.html #menu4">Гриль</a></li>
+                        <li><a href="menu.html #menu5">Десерты</a></li>
+                        <li><a href="menu.html #menu6">Напитки</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Краснодар, ул. Красная, 100</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@tokugawa-bar.ru</li>
+                        <li><i class="fas fa-clock"></i> Ежедневно с 11:00 до 23:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

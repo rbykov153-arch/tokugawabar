@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokugawa Bar - Регистрация</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="shapka">
+        <div class="logo">
+            <img class="logo_img" src="Tokugawa_logo.png" alt="Tokugawa Bar">
+        </div>
+        <div class="nav-links">
+            <div class="knopki">
+                <a class="perehod" href="index.html">Главная</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="menu.html">Меню</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="dos.html">Доставка</a>
+            </div>
+            <div class="knopki">
+                <a class="perehod" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <h1 class="logo_text">TOKU<span>GAWA</span> BAR</h1>
+        <p class="info_logo2">присоединяйтесь к программе лояльности</p>
+    </div>
+    <section class="registration-section">
+        <div class="container">
+            <h2 class="section-title">Регистрация</h2>
+            
+            <div class="registration-content">
+                <div class="benefits">
+                    <h3 style="color: var(--accent-color); margin-bottom: 25px; text-align: center;">Преимущества регистрации</h3>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Приветственный бонус</h3>
+                            <p>Получите 15% скидку на первый заказ после регистрации</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Накопительные бонусы</h3>
+                            <p>Копите бонусные баллы за каждую покупку и оплачивайте ими до 30% заказа</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Экспресс-заказы</h3>
+                            <p>Сохраняйте данные для быстрого оформления заказов в будущем</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Персональные скидки</h3>
+                            <p>Получайте специальные предложения, основанные на ваших предпочтениях</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Привилегии для постоянных клиентов</h3>
+                            <p>Доступ к эксклюзивным блюдам и специальным мероприятиям</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="registration-form">
+                    <h3 style="color: var(--accent-color); margin-bottom: 25px; text-align: center;">Создать аккаунт</h3>
+                    
+                    <form id="registration-form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Имя и фамилия</label>
+                            <input type="text" class="form-input" id="name" placeholder="Введите ваше имя и фамилию" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-input" id="email" placeholder="example@mail.ru" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Телефон</label>
+                            <input type="tel" class="form-input" id="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="password">Пароль</label>
+                            <div class="password-input">
+                                <input type="password" class="form-input" id="password" placeholder="Не менее 8 символов" required>
+                                <button type="button" class="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="confirm-password">Подтвердите пароль</label>
+                            <div class="password-input">
+                                <input type="password" class="form-input" id="confirm-password" placeholder="Повторите пароль" required>
+                                <button type="button" class="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="birthdate">Дата рождения</label>
+                            <input type="date" class="form-input" id="birthdate">
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter" checked>
+                            <label class="form-check-label" for="newsletter">
+                                Получать информацию об акциях и специальных предложениях
+                            </label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                Я соглашаюсь с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        
+                        <div class="login-link">
+                            Уже есть аккаунт? <a href="#">Войти</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bonuses-section">
+        <div class="container">
+            <h2 class="section-title">Бонусная программа</h2>
+            
+            <div class="bonuses-grid">
+                <div class="bonus-card">
+                    <div class="bonus-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="bonus-title">1 бонус = 1 рубль</h3>
+                    <p class="bonus-desc">Получайте 1 бонусный балл за каждый рубль, потраченный в нашем ресторане</p>
+                </div>
+                
+                <div class="bonus-card">
+                    <div class="bonus-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="bonus-title">Подарок на день рождения</h3>
+                    <p class="bonus-desc">Получите специальный подарок в ваш день рождения</p>
+                </div>
+                
+                <div class="bonus-card">
+                    <div class="bonus-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="bonus-title">Приоритетная доставка</h3>
+                    <p class="bonus-desc">Ваши заказы готовятся и доставляются в приоритетном порядке</p>
+                </div>
+                
+                <div class="bonus-card">
+                    <div class="bonus-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="bonus-title">Дегустации и события</h3>
+                    <p class="bonus-desc">Приглашения на специальные мероприятия и дегустации новых блюд</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="levels-section">
+        <div class="container">
+            <h2 class="section-title">Уровни программы лояльности</h2>
+            
+            <table class="levels-table">
+                <thead>
+                    <tr>
+                        <th>Уровень</th>
+                        <th>Условия</th>
+                        <th>Преимущества</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="level-badge">Стандарт</span></td>
+                        <td>Регистрация в программе</td>
+                        <td>5% кешбэк бонусами, приветственная скидка 15%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="level-badge">Серебро</span></td>
+                        <td>10+ заказов или 15 000 руб.</td>
+                        <td>7% кешбэк, бесплатная доставка от 1200 руб., приоритетный заказ</td>
+                    </tr>
+                    <tr>
+                        <td><span class="level-badge">Золото</span></td>
+                        <td>25+ заказов или 40 000 руб.</td>
+                        <td>10% кешбэк, бесплатная доставка от 800 руб., персональный менеджер</td>
+                    </tr>
+                    <tr>
+                        <td><span class="level-badge">Платина</span></td>
+                        <td>50+ заказов или 80 000 руб.</td>
+                        <td>15% кешбэк, бесплатная доставка, эксклюзивные предложения, дегустации</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tokugawa Bar</h3>
+                    <div class="social-links">
+                        <a href="https://vk.com/reilevak"><i>VK</i></a>
+                        <a href="https://t.me/reiebetvammozgi"><i>TG</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Меню</h3>
+                    <ul class="footer-links">
+                        <li><a href="menu.html #menu1">Суши и роллы</a></li>
+                        <li><a href="menu.html #menu2">Сашими</a></li>
+                        <li><a href="menu.html #menu3">Темпура</a></li>
+                        <li><a href="menu.html #menu4">Гриль</a></li>
+                        <li><a href="menu.html #menu5">Десерты</a></li>
+                        <li><a href="menu.html #menu6">Напитки</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Краснодар, ул. Красная, 100</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@tokugawa-bar.ru</li>
+                        <li><i class="fas fa-clock"></i> Ежедневно с 11:00 до 23:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
