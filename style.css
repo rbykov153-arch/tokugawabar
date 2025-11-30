@@ -1,0 +1,425 @@
+        :root {
+            --primary-color: #8d2828;
+            --secondary-color: #da5050;
+            --accent-color: #ff6b6b;
+            --dark-color: #333;
+            --light-color: #fff;
+            --gray-color: #666;
+            --shadow: 0 2px 8px rgba(0,0,0,0.2);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('fon.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--light-color);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .shapka {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            background-color: rgba(0, 0, 0, 0.95);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo_img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 5px;
+        }
+
+        .knopki {
+            padding: 8px 15px;
+            background-color: transparent;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .knopki:hover {
+            background-color: var(--primary-color);
+        }
+
+        .perehod {
+            color: var(--light-color);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light-color);
+            font-size: 22px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* Герой секция - упрощенная */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 70px 15px 30px;
+        }
+
+        .logo_text {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--light-color);
+            opacity: 0;
+            animation: simpleFadeIn 0.8s ease forwards;
+        }
+
+        .logo_text span {
+            color: var(--accent-color);
+        }
+
+        .info_logo2 {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: var(--light-color);
+            opacity: 0;
+            animation: simpleFadeIn 0.8s ease 0.3s forwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: var(--light-color);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: var(--transition);
+            opacity: 0;
+            animation: simpleFadeIn 0.8s ease 0.6s forwards;
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* О ресторане - упрощенная */
+        .about {
+            padding: 60px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .foto_bar {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image:hover .foto_bar {
+            transform: scale(1.03);
+        }
+
+        .about-text {
+            padding: 0 10px;
+        }
+
+        .section-title {
+            font-size: clamp(1.5rem, 5vw, 2.2rem);
+            color: var(--light-color);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 15px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+        }
+
+        .feature i {
+            font-size: 24px;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 13px;
+            color: #ccc;
+            margin: 0;
+        }
+
+        /* Повара - упрощенная */
+        .cooks-section {
+            padding: 60px 0;
+            background: rgba(141, 40, 40, 0.9);
+        }
+
+        .cooks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cook {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .cook:hover {
+            transform: translateY(-5px);
+        }
+
+        .cook-image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--primary-color);
+        }
+
+        .cook img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cook h3 {
+            font-size: 18px;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .cook p {
+            color: var(--gray-color);
+            font-size: 14px;
+        }
+
+        /* Карта - упрощенная */
+        .map-section {
+            padding: 60px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        .map-container {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .address {
+            font-size: 18px;
+            color: var(--light-color);
+            margin: 10px 0;
+        }
+
+        .work-hours {
+            font-size: 16px;
+            color: var(--light-color);
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--light-color);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--light-color);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 14px;
+        }
+        @keyframes simpleFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Адаптивность */
+       @media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+@media (max-width: 576px){
+    .logo_img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-links {
+        gap: 3px;
+    }
+    
+    .knopki {
+        padding: 5px 8px;
+    }
+    
+    .perehod {
+        font-size: 12px;
+    }
+    
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .about, .cooks-section, .map-section {
+        padding: 40px 0;
+    }
+    
+    .about-text {
+        padding: 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer {
+        padding: 30px 0 15px;
+    }
+}
+       }
